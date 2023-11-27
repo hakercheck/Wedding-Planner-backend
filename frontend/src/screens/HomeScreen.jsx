@@ -1,18 +1,18 @@
-import React from "react";
-import styles from '../styles/HomeScreen.module.css';
+import React, {useState, useEffect } from "react";
+//import '../styles/';
 
 const HomeScreen = () => {
 
   return (
-    <div className={styles.container}>
-      <section className={styles.home} id="home">
+    <div>
+      <section className="home" id="home">
         <form action="#">
-          <div className={styles['services-col']}>
+          <div className="search-box">
             <h1>Your Wedding,Your Way</h1>
             <p>
               Find the best wedding vendors with thousands of trusted reviews
             </p>
-            <select type="text" className={styles["search-field"]}>
+            <select type="text" className="search-field">
               <option disabled selected>
                 Select vendor type
               </option>
@@ -22,7 +22,7 @@ const HomeScreen = () => {
               <option value="Groom Wear">Groom Wear</option>
               <option value="Wedding Decoration">Wedding decoration</option>
             </select>
-            <select type="text" className={styles["search-field"]}>
+            <select type="text" className="search-field">
               <option disabled selected>
                 City
               </option>

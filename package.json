@@ -5,17 +5,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "install:frontend": "cd frontend && npm install && npm install @vitejs/plugin-react",
-    "build:frontend": "cd frontend && npm run build",
-    "build": "npm-run-all -s install:frontend build:frontend",
-    "start": "node server.js",
-    "server": "nodemon server.js",
+    "build": "cd frontend && npm run build",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
     "client": "npm run dev --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "engines": {
-    "node": ">=14.0.0"
   },
   "keywords": [],
   "author": "",
@@ -30,10 +25,6 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.1",
     "nodemon": "^3.0.1",
-    "vite": "^5.0.2",
-    "npm-run-all": "^4.1.5"
-  },
-  "devDependencies": {
-    
+    "vite": "^5.0.2"
   }
 }
